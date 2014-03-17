@@ -1,0 +1,73 @@
+{
+  "meteor": {},
+  "dependencies": {
+    "basePackages": {
+      "iron-router": {},
+      "handlebar-helpers": {},
+      "iron-router-progress": {},
+      "semantic-ui": {},
+      "collection2": {},
+      "bootstrap3-less": {},
+      "fontawesome4": {},
+      "user-status": {},
+      "streams": {}
+    },
+    "packages": {
+      "iron-router": {
+        "git": "https://github.com/EventedMind/iron-router.git",
+        "tag": "v0.6.4",
+        "commit": "927bbaed1b87894fb6fb70807f74ff3a5bd89f29"
+      },
+      "handlebar-helpers": {
+        "git": "https://github.com/raix/Meteor-handlebar-helpers.git",
+        "tag": "v0.0.9",
+        "commit": "71e94c99462b8801a34c5363510758b6ff5f5ac7"
+      },
+      "iron-router-progress": {
+        "git": "https://github.com/Multiply/iron-router-progress.git",
+        "tag": "v0.2.0",
+        "commit": "ce730d1d26feadb7c75ea25f22c5bfdb0c549a8b"
+      },
+      "semantic-ui": {
+        "git": "https://github.com/nooitaf/meteor-semantic-ui.git",
+        "tag": "v0.14.0",
+        "commit": "36a98dcdc50216949d2f55c8bebc62ef5cbb29ee"
+      },
+      "collection2": {
+        "git": "https://github.com/aldeed/meteor-collection2.git",
+        "tag": "v0.3.9",
+        "commit": "fdda9b5c87e9dcb5cb67087ecb6c9f21352d0cc2"
+      },
+      "bootstrap3-less": {
+        "git": "https://github.com/eprochasson/bootstrap3-less",
+        "tag": "v0.1.9",
+        "commit": "5c812c4d7ce72917a065f0424c3cf54e5ff2d16a"
+      },
+      "fontawesome4": {
+        "git": "https://github.com/chrismbeckett/meteor-fontawesome4.git",
+        "tag": "v1.0.0",
+        "commit": "fe38ec775e974f0f7855d1693dc74fd4f1b4848c"
+      },
+      "user-status": {
+        "git": "https://github.com/mizzao/meteor-user-status.git",
+        "tag": "v0.3.4",
+        "commit": "741df5e3304807ba42fbe0aca5b8251c5683e1f7"
+      },
+      "streams": {
+        "git": "https://github.com/arunoda/meteor-streams.git",
+        "tag": "v0.1.17",
+        "commit": "9fcbbc9b7bf542827babc92089c19e730892a22f"
+      },
+      "simple-schema": {
+        "git": "https://github.com/aldeed/meteor-simple-schema.git",
+        "tag": "v0.2.41",
+        "commit": "c269b4e9ddb642cdc733c1f4190bcb7b28099e01"
+      },
+      "timesync": {
+        "git": "https://github.com/mizzao/meteor-timesync.git",
+        "tag": "v0.1.3",
+        "commit": "e8c1a76a6c3c10e3d5ec86e4c0b5ec45b7beb230"
+      }
+    }
+  }
+}

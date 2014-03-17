@@ -1,0 +1,14 @@
+<template name="beverages">
+	<ul>
+	{{debug Beverages}}
+		{{#each Beverages}}
+
+			<li>
+				<label>
+					<input type="checkbox"/>
+					{{description}}
+				</label>
+			</li>
+		{{/each}}
+	</ul>
+</template>
