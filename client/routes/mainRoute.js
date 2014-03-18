@@ -1,5 +1,8 @@
 var MainController = RouteController.extend({
-	template: 'main'
+	template: 'main',
+	yieldTemplates: {
+		'header': { to: 'header' },
+	},
 });
 
 Router.map(function () {

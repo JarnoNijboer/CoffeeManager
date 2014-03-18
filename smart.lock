@@ -9,7 +9,7 @@
       "fontawesome4": {},
       "user-status": {},
       "streams": {},
-      "bootswatch-lumen": {}
+      "bootswatch-darkly": {}
     },
     "packages": {
       "iron-router": {
@@ -47,10 +47,10 @@
         "tag": "v0.1.17",
         "commit": "9fcbbc9b7bf542827babc92089c19e730892a22f"
       },
-      "bootswatch-lumen": {
-        "git": "https://github.com/desouradeep/meteor-bootswatch-lumen",
-        "tag": "v0.0.4",
-        "commit": "ff334b8d0400673083a3d3705c4f04c40b983268"
+      "bootswatch-darkly": {
+        "git": "https://github.com/JarnoNijboer/meteor-bootswatch-darkly",
+        "tag": "v0.0.2",
+        "commit": "cbf40c4e1bc830fbdbddd781e996150741c49489"
       },
       "simple-schema": {
         "git": "https://github.com/aldeed/meteor-simple-schema.git",

@@ -1,12 +1,10 @@
 <template name="beverages">
-	<ul>
+	<div class="list-group">
 		{{#each items}}
-			<li>
-				<label>
-					<input type="checkbox"/>
-					{{description}}
-				</label>
-			</li>
+		<a href="#" class="list-group-item">
+			<span class="badge"></span>
+			{{description}}
+		</a>
 		{{/each}}
-	</ul>
+	</div>
 </template>
