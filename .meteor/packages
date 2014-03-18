@@ -13,8 +13,7 @@ accounts-password
 accounts-ui
 iron-router-progress
 collection2
-bootstrap
-bootstrap3-less
 fontawesome4
 user-status
 streams
+bootswatch-lumen
