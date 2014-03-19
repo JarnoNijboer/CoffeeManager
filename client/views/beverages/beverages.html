@@ -1,10 +1,11 @@
 <template name="beverages">
-	<div class="list-group">
+	<ul class="list-group">
 		{{#each items}}
-		<a href="#" class="list-group-item">
+		{{debug items}}
+		<li class="list-group-item">
 			<span class="badge"></span>
 			{{description}}
-		</a>
+		</li>
 		{{/each}}
-	</div>
+	</ul>
 </template>

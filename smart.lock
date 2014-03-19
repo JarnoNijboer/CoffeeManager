@@ -9,7 +9,7 @@
       "fontawesome4": {},
       "user-status": {},
       "streams": {},
-      "bootswatch-darkly": {}
+      "bootstrap-united": {}
     },
     "packages": {
       "iron-router": {
@@ -47,15 +47,15 @@
         "tag": "v0.1.17",
         "commit": "9fcbbc9b7bf542827babc92089c19e730892a22f"
       },
-      "bootswatch-darkly": {
-        "git": "https://github.com/JarnoNijboer/meteor-bootswatch-darkly",
-        "tag": "v0.0.2",
-        "commit": "cbf40c4e1bc830fbdbddd781e996150741c49489"
+      "bootstrap-united": {
+        "git": "https://github.com/JarnoNijboer/meteor-bootstrap-united.git",
+        "tag": "v3.1.1-1",
+        "commit": "50979b02f9e19fa9135693c5387962e6b693ca87"
       },
       "simple-schema": {
         "git": "https://github.com/aldeed/meteor-simple-schema.git",
-        "tag": "v0.2.41",
-        "commit": "c269b4e9ddb642cdc733c1f4190bcb7b28099e01"
+        "tag": "v0.2.42",
+        "commit": "85ce399ec94ecc6b9b2fdb114bddaceba82f3a03"
       },
       "timesync": {
         "git": "https://github.com/mizzao/meteor-timesync.git",
