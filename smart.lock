@@ -9,7 +9,8 @@
       "fontawesome4": {},
       "user-status": {},
       "streams": {},
-      "bootstrap-united": {}
+      "bootstrap-3": {},
+      "accounts-ui-bootstrap-3": {}
     },
     "packages": {
       "iron-router": {
@@ -47,10 +48,15 @@
         "tag": "v0.1.17",
         "commit": "9fcbbc9b7bf542827babc92089c19e730892a22f"
       },
-      "bootstrap-united": {
-        "git": "https://github.com/JarnoNijboer/meteor-bootstrap-united.git",
+      "bootstrap-3": {
+        "git": "https://github.com/mangasocial/meteor-bootstrap-3.git",
         "tag": "v3.1.1-1",
-        "commit": "50979b02f9e19fa9135693c5387962e6b693ca87"
+        "commit": "63dd38968828bb8963636df93e9a1c45e2dfe67e"
+      },
+      "accounts-ui-bootstrap-3": {
+        "git": "https://github.com/mangasocial/meteor-accounts-ui-bootstrap-3.git",
+        "tag": "v0.2.6",
+        "commit": "f3ee0ef6bc506314e19585550b4f9f5620c4ada6"
       },
       "simple-schema": {
         "git": "https://github.com/aldeed/meteor-simple-schema.git",
