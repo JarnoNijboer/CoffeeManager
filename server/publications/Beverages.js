@@ -13,19 +13,19 @@ var beverage = (function() {
 		}
 
 		var beverages = [
-			{ description: 'Koffie', },
-			{ description: 'Heet', },
-			{ description: 'Koud', },
-			{ description: 'Fris', },
-			{ description: 'Cassis', },
-			{ description: 'Ice tea', },
-			{ description: 'Bier', },
-			{ description: 'Kippensoep', },
-			{ description: 'Groentensoep', },
-			{ description: 'Chinese tomatensoep', },
-			{ description: 'Tomatensoep', },
-			{ description: 'Champignonsoep', },
-			{ description: 'Kerriesoep', }
+			{ name: 'Koffie', },
+			{ name: 'Heet', },
+			{ name: 'Koud', },
+			{ name: 'Fris', },
+			{ name: 'Cassis', },
+			{ name: 'Ice tea', },
+			{ name: 'Bier', },
+			{ name: 'Kippensoep', },
+			{ name: 'Groentensoep', },
+			{ name: 'Chinese tomatensoep', },
+			{ name: 'Tomatensoep', },
+			{ name: 'Champignonsoep', },
+			{ name: 'Kerriesoep', }
 		];
 
 		beverages.forEach(function (item) {
@@ -38,4 +38,4 @@ var beverage = (function() {
 	};
 }());
 
-Meteor.startup(beverage.seed);
+// Meteor.startup(beverage.seed);

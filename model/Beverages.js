@@ -1,11 +1,19 @@
+// Schema
+BeverageSchema = new SimpleSchema({
+	name: {
+		type: String,
+		label: "Name",
+		max: 200
+	},
+	groupId: {
+		type: String,
+		label: "Id of group where this order belongs",
+	},
+});
+
+// Collection
 Beverages = new Meteor.Collection2('Beverages', {
-	schema: new SimpleSchema({
-		description: {
-			type: String,
-			label: "Description",
-			max: 200
-		},
-	}),
+	schema: BeverageSchema,
 });
 
 // Collection2 already does schema checking
