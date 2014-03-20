@@ -125,9 +125,6 @@ case ${1} in
         echo "});"                      >> client/modules/${2}/${2}.js
         echo ""                         >> client/modules/${2}/${2}.js
 
-        # echo "@import '../../stylesheets/variables.less'; "  >> client/modules/${2}/${2}.less
-        echo ""                                             >> client/modules/${2}/${2}.less
-
         # Succesful
         echo "Successfully created a module called \"${2}\""
         ;;

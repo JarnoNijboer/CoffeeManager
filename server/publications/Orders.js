@@ -1,4 +1,3 @@
 Meteor.publish('Orders', function () {
-    return Orders.find();
+	return Orders.find();
 });
-
