@@ -19,6 +19,9 @@ GroupSchema = new SimpleSchema({
 		minCount: 1,
 		label: "Members of the group",
 	},
+	deleted: {
+		type: Boolean,
+	},
 });
 
 // Collection

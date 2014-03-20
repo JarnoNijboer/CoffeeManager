@@ -9,6 +9,9 @@ BeverageSchema = new SimpleSchema({
 		type: String,
 		label: "Id of group where this order belongs",
 	},
+	deleted: {
+		type: Boolean,
+	},
 });
 
 // Collection
