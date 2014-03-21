@@ -1,2 +1,33 @@
-<template name="groups-detail">
+<template name="groupsDetail">
+	{{#autoForm schema='Groups' id="groupsDetail"}}
+	<div class="modal fade" id="dlgGroupDetail">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+					<h4 class="modal-title">Add group</h4>
+				</div>
+				<div class="modal-body">
+					<div class="form-group{{#if afFieldIsInvalid 'name'}} has-error{{/if}}">
+						{{afFieldLabel 'name'}}
+						{{afFieldInput 'name'}}
+						{{#if afFieldIsInvalid 'name'}}
+						<span class="help-block">{{afFieldMessage 'name'}}</span>
+						{{/if}}
+					</div>
+					<!-- <form role="form">
+						<div class="form-group">
+							<label for="txtGroupName">Name</label>
+							<input type="text" class="form-control" id="txtGroupName" placeholder="Enter name">
+						</div>
+					</form> -->
+				</div>
+				<div class="modal-footer">
+					<button class="btn btn-default" data-dismiss="modal">Close</button>
+					<button class="btn btn-primary insert">Save changes</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	{{/autoForm}}
 </template>
