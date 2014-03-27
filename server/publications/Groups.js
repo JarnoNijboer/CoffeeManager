@@ -1,3 +1,10 @@
 Meteor.publish('Groups', function () {
-    return Groups.find();
+	var userId = this.userId;
+
+	return Groups.find({
+		$or: [
+			{ owner: userId },
+			{ users: userId }
+		],
+	});
 });

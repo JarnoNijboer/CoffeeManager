@@ -7,7 +7,7 @@ var MainController = RouteController.extend({
 
 Router.map(function () {
 	this.route('main', {
-		path :  '/',
-		controller :  MainController
+		path: '/',
+		controller: MainController
 	});
 });

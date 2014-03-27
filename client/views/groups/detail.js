@@ -1,22 +1,21 @@
 Template['groupsDetail'].helpers({
+	doc: function() {
+		var groupId = $('dlgGroupDetail').data('itemId');
 
+		return Groups.findOne(groupId);
+	}
 });
-
-Template['groupsDetail'].jarno = function () {
-	return Groups.find();
-		// var userId = Meteor.userId();
-
-		// return Groups.find({
-		// 	deleted: false,
-		// 	$or: [
-		// 		{ ownerId: userId },
-		// 		{ userIds: userId }
-		// 	],
-		// });
-	},
 
 Template['groupsDetail'].events({
 	'click #btnGroupSave': function (e) {
+		$('#dlgGroupDetail').modal('hide');
+	},
+	'click #btnGroupRemove': function (e) {
+		console.log(this, e);
+var groupId = $('dlgGroupDetail').data('itemId');
 
+this.doc = Groups.findOne(groupId);
+
+		$('#dlgGroupRemove').modal('hide');
 	},
 });

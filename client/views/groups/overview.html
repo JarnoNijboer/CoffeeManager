@@ -5,7 +5,7 @@
 		</div>
 		<div class="panel-body">
 			<div class="pull-right">
-				<button id="btnGroupAdd" class="btn btn-default">
+				<button type="button" id="btnGroupAdd" class="btn btn-default">
 					<i class="fa fa-coffee fa-fw fa-lg"></i>
 					Add group
 				</button>
@@ -15,16 +15,40 @@
 			<thead>
 				<tr>
 					<th>Name</th>
+					<th>Users</th>
+					<th colspan="2">Admin</th>
 				</tr>
 			</thead>
 			<tbody>
 				{{#each groups}}
-					<tbody>
-						<tr>
-							<td>{{name}}</td>
-							<td>{{number}}</td>
-						</tr>
-					</tbody>
+					<tr>
+						<td>{{name}}</td>
+						<td class="text-right">{{number}}</td>
+						<td>{{admin}}</td>
+						{{#if this.isAdmin}}
+							<td>
+								<div class="btn-group pull-right">
+									<a href="#" data-toggle="dropdown">
+										<i class="fa fa-ellipsis-v fa-lg fa-fw"></i>
+									</a>
+									<ul class="dropdown-menu">
+										<li>
+											<a href="#" data-action="edit">
+												<i class="fa fa-pencil fa-fw"></i>
+												Edit
+											</a>
+										</li>
+										<li>
+											<a href="#" data-action="remove">
+												<i class="fa fa-trash-o fa-fw"></i>
+												Delete
+											</a>
+										</li>
+									</ul>
+								</div>
+							</td>
+						{{/if}}
+					</tr>
 				{{/each}}
 			</tbody>
 		</table>

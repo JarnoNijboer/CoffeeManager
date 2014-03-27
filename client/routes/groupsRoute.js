@@ -7,7 +7,7 @@ var GroupsController = RouteController.extend({
 
 Router.map(function () {
 	this.route('groups', {
-		path :  '/groups',
-		controller :  GroupsController
+		path: '/groups',
+		controller: GroupsController
 	});
 });

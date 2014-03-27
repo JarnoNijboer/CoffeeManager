@@ -7,7 +7,7 @@ var OrdersController = RouteController.extend({
 
 Router.map(function () {
 	this.route('orders', {
-		path :  '/orders',
-		controller :  OrdersController
+		path: '/orders',
+		controller: OrdersController
 	});
 });

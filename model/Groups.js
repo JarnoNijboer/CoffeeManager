@@ -2,26 +2,39 @@
 GroupSchema = new SimpleSchema({
 	name: {
 		type: String,
-		label: "Name",
+		label: 'Name',
 		max: 200
 	},
 	beverages: {
 		type: [BeverageSchema],
-		label: "Beverages to choose from",
+		label: 'Beverages',
 		optional: true,
 	},
-	ownerId: {
+	owner: {
 		type: String,
-		label: "User who created the group",
+		label: 'Admin/User',
+		autoValue: function () {
+			if (this.isSet) {
+				return this.value;
+			}
+			else {
+				return this.userId;
+			}
+		},
+		denyUpdate: true
 	},
-	userIds: {
+	users: {
 		type: [String],
-		minCount: 1,
-		label: "Members of the group",
-	},
-	deleted: {
-		type: Boolean,
-	},
+		label: 'Members',
+		autoValue: function () {
+			if (this.isSet) {
+				return this.value;
+			}
+			else {
+				return [this.userId];
+			}
+		},
+	}
 });
 
 // Collection
@@ -29,7 +42,17 @@ Groups = new Meteor.Collection2('Groups', {
 	schema: GroupSchema,
 	virtualFields: {
 		number: function (group) {
-			return group.userIds.count();
+			return group.users ? group.users.length : 0;
+		},
+		admin: function (group) {
+			var user = Meteor.users.findOne(group.owner);
+
+			return user ? user.username : '';
+		},
+		isAdmin: function (group) {
+			var userId = Meteor.userId();
+
+			return group.owner === userId;
 		},
 	},
 });
@@ -47,4 +70,3 @@ Groups.allow({
 		return true;
 	}
 });
-

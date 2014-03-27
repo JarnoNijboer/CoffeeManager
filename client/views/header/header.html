@@ -1,25 +1,31 @@
 <template name="header">
 	<ul class="nav navbar-nav">
 		{{#if currentUser}}
-			<li>
+			<li class="{{isActive 'orders'}}">
 				<a href="{{urlFor 'orders'}}">
 					<i class="fa fa-tags fa-fw fa-lg"></i>
 					Orders
 				</a>
 			</li>
-			<li>
-			<a href="{{urlFor 'groups'}}">
-			<i class="fa fa-users fa-fw fa-lg"></i>
-			Groups
-			</a>
+			<li class="{{isActive 'groups'}}">
+				<a href="{{urlFor 'groups'}}">
+					<i class="fa fa-users fa-fw fa-lg"></i>
+					Groups
+				</a>
 			</li>
-			<!-- <li><a href="#">Statistics</a></li> -->
+			<!-- <li class="{{isActive 'statistics'}}">
+				<a href="{{urlFor 'statistics'}}">
+					<i class="fa fa-trophy fa-fw fa-lg"></i>
+					Statistics
+				</a>
+			</li> -->
 		{{/if}}
 	</ul>
 	<ul class="nav navbar-nav navbar-right">
 		{{#if currentUser}}
 			<li class="dropdown">
 				<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+				<i class="fa fa-user fa-fw fa-lg"></i>
 					{{userName}}
 					<i class="fa fa-caret-down"></i>
 				</a>
