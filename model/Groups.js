@@ -2,8 +2,7 @@
 GroupSchema = new SimpleSchema({
 	name: {
 		type: String,
-		label: 'Name',
-		max: 200
+		label: 'Name'
 	},
 	beverages: {
 		type: [BeverageSchema],

@@ -9,24 +9,23 @@
 				</button>
 				<a class="navbar-brand" href="{{urlFor 'main'}}">
 					<i class="fa fa-coffee fa-2x fa-fw pull-left"></i>
-					CoffeeManager
+					CoffeeManager.io
 				</a>
 			</div>
 			<div class="navbar-collapse collapse navbar-responsive-collapse">
-				{{> yield header}}
+				{{> yield region='header'}}
 			</div>
 		</div>
 	</header>
-	<div class="container">
-	{{#if currentUser}}
-		{{> yield}}
-	{{else}}
-		<div class="well">
-			<h1>Welcome to CoffeeManager!</h1>
-			<h4>
-				Sign up, login and join your group to enjoy your fresh cup of coffee!
-			</h4>
+	<div id="wrap">
+		<div class="container">
+			{{> yield}}
 		</div>
-	{{/if}}
+		<div id="push"></div>
 	</div>
+	<footer>
+		<div class="container">
+			{{> yield region='footer'}}
+		</div>
+	</footer>
 </template>

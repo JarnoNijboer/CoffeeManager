@@ -1,8 +1,5 @@
 var OrdersController = RouteController.extend({
 	template: 'orders-overview',
-	yieldTemplates: {
-		'header': { to: 'header' },
-	},
 });
 
 Router.map(function () {

@@ -1,43 +1,41 @@
 <template name="orders-overview">
-	<body>
-		<div class="panel panel-default">
-			<div class="panel-heading">
-				<h3 class="panel-title">Orders</h3>
-			</div>
-			<div class="panel-body">
-				<div class="pull-right">
-					<button id="add-order-" class="btn btn-default">
-						<i class="fa fa-thumbs-up fa-fw fa-lg"></i>
-						Pick up
-					</button>
-					<button id="add-order-" class="btn btn-default">
-						<i class="fa fa-coffee fa-fw fa-lg"></i>
-						Get me some
-					</button>
-				</div>
-			</div>
-			<table class="table">
-				<thead>
-					<tr>
-						<th>Picked up by</th>
-						<th>Date</th>
-						<th>Number</th>
-						<th>Group</th>
-					</tr>
-				</thead>
-				<tbody>
-					{{#each orders}}
-						<tbody>
-							<tr>
-								<td>{{user.name}}</td>
-								<td>{{date}}</td>
-								<td>{{number}}</td>
-								<td>{{groupDescription}}</td>
-							</tr>
-						</tbody>
-					{{/each}}
-				</tbody>
-			</table>
+	<div class="panel panel-default">
+		<div class="panel-heading">
+			<h3 class="panel-title">Orders</h3>
 		</div>
-	</body>
+		<div class="panel-body">
+			<div class="pull-right">
+				<button id="add-order-" class="btn btn-default">
+					<i class="fa fa-thumbs-up fa-fw fa-lg"></i>
+					Pick up
+				</button>
+				<button id="add-order-" class="btn btn-default">
+					<i class="fa fa-coffee fa-fw fa-lg"></i>
+					Get me some
+				</button>
+			</div>
+		</div>
+		<table class="table">
+			<thead>
+				<tr>
+					<th>Picked up by</th>
+					<th>Date</th>
+					<th>Number</th>
+					<th>Group</th>
+				</tr>
+			</thead>
+			<tbody>
+				{{#each orders}}
+				<tbody>
+					<tr>
+						<td>{{user.name}}</td>
+						<td>{{date}}</td>
+						<td>{{number}}</td>
+						<td>{{groupDescription}}</td>
+					</tr>
+				</tbody>
+				{{/each}}
+			</tbody>
+		</table>
+	</div>
 </template>
